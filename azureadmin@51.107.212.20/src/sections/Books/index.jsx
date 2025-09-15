@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
-import UsersList from './components/UsersList'
+import BooksList from './components/BooksList'
 
-function UsersSection() {
-  const url = "/users"
+function BooksSection() {
+  const url = "http://localhost:4000/books"
   const [data, setData] = useState([])
 
   useEffect(() => {
@@ -16,12 +16,12 @@ function UsersSection() {
 
   return (
     <section>
-      <h2>Users Section</h2>
+      <h2>Books Section</h2>
       <div className="scroll-container">
-        <UsersList data={data} />
+        <BooksList data={data} />
       </div>
     </section>
   )
 }
 
-export default UsersSection
+export default BooksSection

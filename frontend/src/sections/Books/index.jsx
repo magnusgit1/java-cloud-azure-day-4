@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import BooksList from './components/BooksList'
 
 function BooksSection() {
-  const url = "http://localhost:4000/books"
+  const url = "/books"
   const [data, setData] = useState([])
 
   useEffect(() => {

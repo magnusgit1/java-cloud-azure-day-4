@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import UsersList from './components/UsersList'
 
 function UsersSection() {
-  const url = "/users"
+  const url = "http://localhost:4000/users"
   const [data, setData] = useState([])
 
   useEffect(() => {

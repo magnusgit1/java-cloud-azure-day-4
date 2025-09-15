@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import GamesList from './components/GamesList'
 
 function GamesSection() {
-  const url = "http://localhost:4000/games"
+  const url = "/games"
   const [data, setData] = useState([])
 
   useEffect(() => {

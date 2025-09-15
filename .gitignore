@@ -6,4 +6,6 @@
 /main.tfplan
 /terraform.tfstate
 /terraform.tfstate.backup
-/.jar
+*.jar
+/.azure-tf-server-priv
+/azure-tf-server-priv
